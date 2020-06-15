@@ -1,12 +1,20 @@
 ## Create Python virtual environment
-'''bash
+```bash
 mkvirtualenv _virtual_env_name_
-'''
+```
 
 ## Install packages specified in `requirements.txt`
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
 
-## Notes
-Python 3 requires the use of 
+## MySQL Connector
+Python 3 requires the use of MySQL Connector package for connecting to MySQL databases.
+```bash
+pip install mysql-connector-python
+```
+To specify the use of MySQL Connector with SQLAlchemy, use database URI setting like this:
+```bash
+SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://flask_admin:flask_admin@localhost/bookmarks'
+```
+See [here](https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/) for details.
