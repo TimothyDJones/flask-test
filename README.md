@@ -18,3 +18,7 @@ To specify the use of MySQL Connector with SQLAlchemy, use database URI setting 
 SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://flask_admin:flask_admin@localhost/bookmarks'
 ```
 See [here](https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/) for details.
+
+# References
+[Build a CRUD Web App With Python and Flask](https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one)
+
